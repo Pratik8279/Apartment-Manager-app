@@ -1,0 +1,16 @@
+#nav{
+   height: 80px;
+   width: 100%;
+   /* border:1px solid red; */
+   padding: 30px;
+   display: flex;
+   gap: 50px;
+   justify-content: center;
+   background-color: rgb(231, 231, 231);
+}
+#nav>a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
