@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { delete_data, get_data, edit_data } from "../../Redux/actions";
+import styles from "./Home.module.css"
 
 function SingleUnit({ data, id }) {
   const [check, setCheck] = useState(false);
@@ -123,7 +124,7 @@ function SingleUnit({ data, id }) {
           <td>{data.room_no}</td>
           <td>{data.type}</td>
           <td>{data.contact_no}</td>
-          <td onClick={() => setCheck(!check)}>{check ? "Paid" : "Pending"}</td>
+          <td id= {styles.td} onClick={() => setCheck(!check)}>{check ? "Paid" : "Pending"}</td>
           <td>
             <button onClick={() => handleClick(id)}>Delete</button>
           </td>

@@ -38,6 +38,7 @@ export const get_data = (page) => async (dispatch) => {
 };
 
 // Deleting actions
+
 export const delete_request = ()=>({
     type: DELETE_REQUEST
 })
@@ -99,7 +100,6 @@ export const add_data =
           type
         }),
       });
-      // let data = await res.json()
       dispatch(add_success());
     } catch (error) {
       dispatch(add_error());

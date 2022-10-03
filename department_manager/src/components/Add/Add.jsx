@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { add_data } from '../../Redux/actions';
+import Load from '../Home/Load';
 import styles from "./Add.module.css"
 
 function Add() {
   const [formData, setFormData] = useState({});
   const dispatch = useDispatch()
+
 
   const handleChange = (e)=>{
      let inputName= e.target.name;
@@ -18,6 +20,7 @@ function Add() {
     e.preventDefault();
     dispatch(add_data(formData))
   }
+
   return (
     <>
        <form id= {styles.form} onSubmit= {handleSubmit}>

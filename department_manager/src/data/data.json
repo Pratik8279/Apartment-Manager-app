@@ -1,18 +1,6 @@
 {
   "info": [
     {
-      "id": 1,
-      "first_name": "Ophelie",
-      "last_name": "Garrold",
-      "age": 42,
-      "gender": "Female",
-      "image": "https://i0.wp.com/thatrandomagency.com/wp-content/uploads/2021/06/headshot.png?resize=618%2C617&ssl=1",
-      "contact_no": "113-941-2412",
-      "type": "Owner",
-      "wing": "D",
-      "room_no": 201
-    },
-    {
       "id": 10,
       "first_name": "Verney",
       "last_name": "Crallan",
@@ -1043,18 +1031,6 @@
       "image": "esg",
       "type": "eg",
       "id": 105
-    },
-    {
-      "first_name": "saf",
-      "last_name": "etw",
-      "age": "52",
-      "contact_no": "eg",
-      "gender": "ewt",
-      "wing": "eg",
-      "room_no": "eg",
-      "image": "esg",
-      "type": "eg",
-      "id": 106
     }
   ]
 }
