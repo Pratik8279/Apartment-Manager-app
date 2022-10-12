@@ -1,21 +1,21 @@
-#main{
-    display: flex;
-    justify-content: center;
+#main {
+  display: flex;
+  justify-content: center;
 }
-#unit{
-    display: flex;
-    margin: auto;
-    height: 400px;
-    width: 50%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin-top: 140px;
+#unit {
+  display: flex;
+  margin: auto;
+  height: 400px;
+  width: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 140px;
 }
-#unit>img{
-    height: 100%;
-    width: 50%;
-    object-fit: cover;
+#unit > img {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
 }
-#info{
-    text-align: left;
-    padding: 60px 0px 0px 60px;
+#info {
+  text-align: left;
+  padding: 60px 0px 0px 60px;
 }
