@@ -137,37 +137,38 @@ export const appReducer = (state = initState, action) => {
         data: [...new_data],
       };
     }
-  case FILTER_IT: {
-    let new_data= [];
-    if(action.payload == "Owner"){
-      new_data = state.data.filter((ele)=>{
-          return ele.type.includes(action.payload)
-      })
+    case FILTER_IT: {
+      let new_data = [];
+
+      if (action.payload == "Owner") {
+        new_data = state.data.filter((ele) => {
+          return ele.type.includes(action.payload);
+        });
+      }
+      if (action.payload == "Tenant") {
+        new_data = state.data.filter((ele) => {
+          return ele.type.includes(action.payload);
+        });
+      }
+      return {
+        ...state,
+        loading: false,
+        error: false,
+        data: [...new_data],
+      };
     }
-    if(action.payload == "Tenant"){
-      new_data = state.data.filter((ele)=>{
-          return ele.type.includes(action.payload)
-      })
+    case SEARCH_IT: {
+      let new_data = [];
+      new_data = state.data.filter((ele) => {
+        return ele.first_name.includes(action.payload);
+      });
+      return {
+        ...state,
+        loading: false,
+        error: false,
+        data: [...new_data],
+      };
     }
-    return{
-       ...state,
-       loading: false,
-       error: false,
-       data: [...new_data]
-    }
-  }
-  case SEARCH_IT: {
-    let new_data =[];    
-    new_data = state.data.filter((ele)=>{
-      return ele.first_name.includes(action.payload)
-  })
-     return{
-      ...state,
-      loading: false,
-      error: false,
-      data: [...new_data]
-     }
-  }
     default: {
       {
         return state;

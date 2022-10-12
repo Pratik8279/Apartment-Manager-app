@@ -29,8 +29,7 @@ export const get_error = () => ({
   type: GET_ERROR,
 });
 
-export const get_data = (page, sortVal) => async (dispatch) => {
-  console.log(sortVal);
+export const get_data = (page) => async (dispatch) => {
   dispatch(get_req());
   try {
     let res = await fetch(
@@ -155,6 +154,7 @@ export const edit_data =
     id
   ) =>
   async (dispatch) => {
+    dispatch(edit_request());
     try {
       let res = await fetch(`https://pratikmock.herokuapp.com/info/${id}`, {
         method: "PUT",
@@ -173,10 +173,14 @@ export const edit_data =
       });
       let data = await res.json();
       console.log(data);
+      dispatch(edit_success());
     } catch (error) {
       console.log(error);
+      dispatch(edit_error());
     }
   };
+
+// Sort actions
 
 export const sort_success = (arg) => ({
   type: SORT_IT,
@@ -187,15 +191,18 @@ export const sort_it = (arg) => (dispatch) => {
   dispatch(sort_success(arg));
 };
 
+// Filter actions
+
 export const filter_success = (arg) => ({
   type: FILTER_IT,
   payload: arg,
 });
 
-export const filter_it = (arg) => (dispatch) => {
+export const filter_it = (arg) => async (dispatch) => {
   dispatch(filter_success(arg));
 };
 
+// search actions
 
 export const search_success = (arg) => ({
   type: SEARCH_IT,

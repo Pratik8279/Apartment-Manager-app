@@ -7,23 +7,22 @@
 #td {
   cursor: pointer;
 }
-#options{
-   display: flex;
-   justify-content: center;
-   gap: 30px;
-   margin-bottom: 30px;
-  
+#options {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
 }
-#options>select{
-   width: 200px;
-   background-color: rgb(220, 219, 219);
+#options > select {
+  width: 200px;
+  background-color: rgb(220, 219, 219);
 }
-#options>input{
+#options > input {
   width: 300px;
 }
-#btn{
+#btn {
   background-color: yellow;
-  border:6px solid yellow;
-   border-radius: 5px;
-   color: rgb(47, 31, 31);
+  border: 6px solid yellow;
+  border-radius: 5px;
+  color: rgb(47, 31, 31);
 }

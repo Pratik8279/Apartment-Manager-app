@@ -24,12 +24,12 @@ export const EDIT_ERROR = "EDIT_ERROR";
 
 // Sort request
 
-export const SORT_IT = "SORT_IT"
+export const SORT_IT = "SORT_IT";
 
 // Filter request
 
-export const FILTER_IT = "FILTER_IT"
+export const FILTER_IT = "FILTER_IT";
 
 // Search request
 
-export const SEARCH_IT = "SEARCH_IT"
+export const SEARCH_IT = "SEARCH_IT";
