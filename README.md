@@ -1,50 +1,70 @@
-# Apartment-Manager-app
-For Authentication in the Website I have used reqres.com so please use "eve.holt@reqres.in" as a email and "cityslicka" as a password.
+# Getting Started with Create React App
 
-## Deployment
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-On frontend terminal perform:
+In the project directory, you can run:
 
-```bash
-  npm start
-```
+### `npm start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## 🛠 Tech Stack
+### `npm test`
 
-- React
-- CSS
-- Javascript
-- Local storage
-- Redux
-- HTML
-- Bootstrap
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Functionality
+### `npm run build`
 
-- Search Functionality
-- Filtering with respect to type of resident
-- Sorting option with respect to room number
-- Rsidents detail
-- Authentication
-- Sign in page
-- Delete,Add residents option
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Website flow for User
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- Main page with each resident details in rabular format
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- You can view each residents details by clicking on view.
+### `npm run eject`
 
-- You can delete resident if you want from table
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-- If you want to add any resident then there is a sign page 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- After successful sign in you can add resident on that page
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Learn More
 
-## Thank you note
-Thank you all who is giving precious time to visit our little creative project which is made with lot of efforts.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
