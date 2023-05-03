@@ -33,7 +33,7 @@ export const get_data = (page) => async (dispatch) => {
   dispatch(get_req());
   try {
     let res = await fetch(
-      `https://pratikmock.herokuapp.com/info?_page=${page}&_limit=10`
+      `https://angry-dog-kerchief.cyclic.app/info?_page=${page}&_limit=10`
     );
     let data = await res.json();
     dispatch(get_success(data));
@@ -62,7 +62,7 @@ export const delete_data = (id) => async (dispatch) => {
   dispatch(delete_request());
   console.log(id);
   try {
-    await fetch(`https://pratikmock.herokuapp.com/info/${id}`, {
+    await fetch(`https://angry-dog-kerchief.cyclic.app/info/${id}`, {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
     });
@@ -102,7 +102,7 @@ export const add_data =
   async (dispatch) => {
     dispatch(add_req());
     try {
-      let res = await fetch(`https://pratikmock.herokuapp.com/info`, {
+      let res = await fetch(`https://angry-dog-kerchief.cyclic.app/info`, {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
@@ -156,7 +156,7 @@ export const edit_data =
   async (dispatch) => {
     dispatch(edit_request());
     try {
-      let res = await fetch(`https://pratikmock.herokuapp.com/info/${id}`, {
+      let res = await fetch(`https://angry-dog-kerchief.cyclic.app/info/${id}`, {
         method: "PUT",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify({

@@ -7,7 +7,7 @@ function Details() {
   const { id } = useParams();
   let get_data = async () => {
     try {
-      let res = await fetch(`https://pratikmock.herokuapp.com/info/${id}`);
+      let res = await fetch(`https://angry-dog-kerchief.cyclic.app/info/${id}`);
       let info = await res.json();
       setData(info);
     } catch (error) {
